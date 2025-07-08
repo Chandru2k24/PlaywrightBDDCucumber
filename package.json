@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean:reports": "rimaf test-results reports",
     "test": "cucumber-js",
     "posttest": "npx ts-node src/helper/report.ts",
     "report": "node reporter.js"
