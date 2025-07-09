@@ -10,7 +10,9 @@ module.exports = {
       "src/hooks/**/*.ts"
     ],
     format: [
+
       "progress-bar",
+      "rerun:@rerun.txt",
       "html:reports/cucumber-report.html",
       "json:test-results/cucumber-report.json"
     ],

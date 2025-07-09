@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean:reports": "rimaf test-results reports",
+    "test-failed": "cucumber-js @rerun.txt",
     "test": "cucumber-js",
     "posttest": "npx ts-node src/helper/report.ts",
     "report": "node reporter.js"
@@ -17,8 +18,10 @@
     "@cucumber/cucumber": "^11.3.0",
     "@playwright/test": "^1.53.2",
     "@types/node": "^24.0.10",
+    "dotenv": "^17.1.0",
     "multiple-cucumber-html-reporter": "^3.9.3",
     "playwright": "^1.53.2",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "winston": "^3.17.0"
   }
 }
